@@ -37,7 +37,7 @@ if(!$dataselect){
 	die("database not selected".mysql_error());
 }
 */
-$create_table = mysql_query("CREATE TABLE users(name varchar(12), surname varchar(12), email varchar(320),UNIQUE KEY(email))",$connect);
+$create_table = mysql_query("CREATE TABLE users(name varchar(12), surname varchar(12), email varchar(255),UNIQUE KEY(email))",$connect);
 
 if(!$create_table){
 	die("Table not created".mysql_error());	
@@ -51,11 +51,11 @@ $email = 'srikanth.chad@gmail.com';
 if(($file = fopen("users.csv","r")) !== false){
 	//loops through csv file and insert into database
 	do {
-		if(filter_var($email,FILTER_VALIDATE_EMAIL)){
+		/*if(filter_var($email,FILTER_VALIDATE_EMAIL)){
 			echo "this is valid email address"	
 		}else{
 			echo "this is not valid email address"	
-		}
+		}*/
 		if($data[0]){
 			mysql_query("INSERT INTO users (name, surname, email) VALUES
 				(
