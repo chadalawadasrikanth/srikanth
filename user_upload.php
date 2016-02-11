@@ -52,7 +52,7 @@ if(($file = fopen("users.csv","r")) !== false){
 		if($data[0]){
 			mysql_query("INSERT INTO users (name, surname, email) VALUES
 				(
-					'"$data[0]."', '"$data[1]."', '"$data[2]."'
+					'".addslashes($data[0])."', '".addslashes($data[1])."', '".addslashes($data[2])."'
 				)
 			");
 		}
