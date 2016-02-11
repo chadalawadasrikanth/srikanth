@@ -49,9 +49,9 @@ if(($file = fopen("users.csv","r")) !== false){
 		$surname = ucfirst(strtolower($surname));
 		$email = 'srikanth.chad@gmail.com';
 		if(filter_var($email,FILTER_VALIDATE_EMAIL)){
-			echo "this is valid email address"	
+			echo "this is valid email address";
 		}else{
-			echo "this is not valid email address"	
+			echo "this is not valid email address";	
 		}
 		
 		if($data[0]){
