@@ -1,0 +1,21 @@
+Task 1: 
+
+--connected to the database
+--created database
+--created the table named as "users"
+--imported the csv file
+--validated the rows before inserted into database table
+--data added to the users table
+--final test of the data in sql is not completed because of the sql problems in system
+--task1 of the file is named user_upload.php
+--files are uploaded in the repository
+--link to repository : https://github.com/chadalawadasrikanth/srikanth
+--all the changes are committed
+
+
+
+
+Task 2
+--named the file name as counter.php
+--this file is completely tested and right output is displayed
+
